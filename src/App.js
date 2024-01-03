@@ -124,7 +124,7 @@ function App() {
     const L2 = Math.sqrt(Math.pow(datapoint[0] - trueX, 2) + Math.pow(datapoint[1] - trueY, 2));
     const MSE = (Math.pow(datapoint[0] - trueX, 2) + Math.pow(datapoint[1] - trueY, 2)) / 2;
     
-    let questionScore = Math.round((1-L2) * 100);
+    let questionScore = Math.round((1-L2*2) * 100);
     if (questionScore < 0) {
       questionScore = 0;
     }
